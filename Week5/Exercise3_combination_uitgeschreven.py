@@ -1,13 +1,11 @@
 
 # %%
 import math
-from msilib.schema import Error
-import numpy as np
-import scify 
+import numpy as np 
 import matplotlib.pyplot as plt 
 #%%
 def comb(n,r):
-    return np.math.factorial(n)/ (np.math.factorial(n-r) * np.factorial(r))
+    return (math.factorial(n))/ (math.factorial(n-r) * math.factorial(r))
 #%%
 def strong_classifier_right(r, n):
     return comb(n,r) * 0.6**r * 0.4**(n-r)  * 0.8
